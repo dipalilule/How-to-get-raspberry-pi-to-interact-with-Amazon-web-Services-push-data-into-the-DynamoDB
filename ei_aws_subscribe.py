@@ -27,9 +27,9 @@ awshost = "aev9wr5jdclfp-ats.iot.us-east-1.amazonaws.com"      # Endpoint
 awsport = 8883                                              # Port no.   
 clientId = "Pi-thing"                                     # Thing_Name
 thingName = "Pi-thing"                                    # Thing_Name
-caPath = "/home/pi/download/AmazonRootCA1 (6).pem"                                      # Root_CA_Certificate_Name
-certPath = "/home/pi/download/d1a8a5e2f2ef0dcee97fb43996e77d3fc5df7740df53ab461c27241bf9d5d464-certificate.pem.crt"                            # <Thing_Name>.cert.pem
-keyPath = "/home/pi/download/d1a8a5e2f2ef0dcee97fb43996e77d3fc5df7740df53ab461c27241bf9d5d464-private.pem.key"                          # <Thing_Name>.private.key
+caPath = "/home/pi/How-to-get-raspberry-pi-to-interact-with-Amazon-web-Services-push-data-into-the-DynamoDB/AmazonRootCA1 (6).pem"                                      # Root_CA_Certificate_Name
+certPath = "/home/pi/How-to-get-raspberry-pi-to-interact-with-Amazon-web-Services-push-data-into-the-DynamoDB/d1a8a5e2f2ef0dcee97fb43996e77d3fc5df7740df53ab461c27241bf9d5d464-certificate.pem.crt"                            # <Thing_Name>.cert.pem
+keyPath = "/home/pi/How-to-get-raspberry-pi-to-interact-with-Amazon-web-Services-push-data-into-the-DynamoDB/d1a8a5e2f2ef0dcee97fb43996e77d3fc5df7740df53ab461c27241bf9d5d464-private.pem.key"                          # <Thing_Name>.private.key
  
 mqttc.tls_set(caPath, certfile=certPath, keyfile=keyPath, cert_reqs=ssl.CERT_REQUIRED, tls_version=ssl.PROTOCOL_TLSv1_2, ciphers=None)      
  
